@@ -11,7 +11,7 @@ const userSchema = new Schema({
     coverImg: {type: String, default: ''},
     bio: {type: String, default: ''},
     link: {type: String, default: ''},
-
+    likedPosts: [{type: Schema.Types.ObjectId, ref: 'Post', default: []}]
 }, {timestamps: true})
 
 
